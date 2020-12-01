@@ -1,3 +1,13 @@
+Solution by the Candidate
+============================
+
+In this branch, I included all the Asynchronous versions of the tasks and measured time taken by each function to execute.
+
+And as shown in the below picture, all the tasks were executed in less than 1000ms.
+
+Here I used `console.time("asyncTask1");` and `console.timeEnd("asyncTask1");` to measure time.
+
+
 Harver JS Exercise
 ============================
 
