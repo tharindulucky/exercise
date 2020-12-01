@@ -1,5 +1,5 @@
 const { getRandomWordSync, getRandomWord } = require('word-maker');
-fs = require('fs');
+const fs = require('fs');
 
 console.log('It works!');
 
@@ -109,6 +109,7 @@ function writeToFile(filename, data) {
     file.end();
 }
 
+// Calling functions
 
 task1Sync();
 task2Sync();
