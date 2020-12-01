@@ -19,6 +19,10 @@ So, to evaluate each respective task, please switch branches.
 
 Special instructions are included if necessary in each branch's README file.
 
+## Execution time
+
+![ime](https://user-images.githubusercontent.com/15250118/100796395-9493c780-3446-11eb-9809-35499e4c07e9.PNG)
+
 Harver JS Exercise
 ============================
 
