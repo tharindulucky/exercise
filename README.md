@@ -1,3 +1,24 @@
+Solution by the candidate
+============================
+
+In this technical assessment, I successfully completed all five tasks.
+
+And also, I measured time for each asynchronous function to execute and my solutions executed in less than 1000ms.
+
+I have created 5 separate branches for each task. And one more branch for measuring time. 
+
+**Branches:**
+* `task_1`
+* `task_2`
+* `task_3`
+* `task_4`
+* `task_5`
+* `measure_time`
+
+So, to evaluate each respective task, please switch branches.
+
+Special instructions are included if necessary in each branch's README file.
+
 Harver JS Exercise
 ============================
 
