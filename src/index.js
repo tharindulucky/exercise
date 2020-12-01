@@ -1,4 +1,5 @@
 const { getRandomWordSync, getRandomWord } = require('word-maker');
+const fs = require('fs');
 
 console.log('It works!');
 
@@ -108,9 +109,83 @@ function task2AsyncWithErrorHandling() {
 
 
 
+/*Task 1 - Asynchronous solution with Error handling - Writing output to a file*/
+function task1AsyncFileWrite() {
+
+    console.time("task1AsyncFileWrite");
+
+    const randomWordsArr = [];
+    const random_statements = [];
+
+    for(let i = 1; i <= 100; i++){
+        randomWordsArr.push(getRandomWord({ withErrors: true, slow: true }).catch(e => "It shouldn't break anything!"));
+    }
+
+    Promise.all(randomWordsArr).then((results) =>{
+        results.map((result, index) => {
+            random_statements.push(index+1+": "+result);
+        });
+        writeToFile("task1_async_to_file.txt", random_statements);
+        console.timeEnd("task1AsyncFileWrite");
+    });
+}
+
+
+/*Task 2 - Asynchronous solutions with Error handling - Writing output to a file*/
+function task2AsyncFileWrite() {
+
+    console.time("task2AsyncFileWrite");
+
+    const fizzBuzzWordsArr = [];
+    const random_statements = [];
+
+    for(let i = 1; i <= 100; i++){
+        fizzBuzzWordsArr.push(getRandomWord({ withErrors: true, slow: true }).catch(e => "It shouldn't break anything!"));
+    }
+
+    Promise.all(fizzBuzzWordsArr).then((results) =>{
+        results.map((result, index) => {
+            let newIndex = index+1;
+            if(!(newIndex%3) && !(newIndex%5))
+                random_statements.push(newIndex+": "+"FizzBuzz");
+            else if(!(newIndex%3))
+                random_statements.push(newIndex+": "+"Fizz");
+            else if(!(newIndex%5))
+                random_statements.push(newIndex+": "+"Buzz");
+            else
+                random_statements.push(newIndex+": "+result);
+        });
+        writeToFile("task2_async_to_file.txt", random_statements);
+        console.timeEnd("task2AsyncFileWrite");
+    });
+}
+
+
+
+/*
+Reusable function for file writing.
+*/
+
+function writeToFile(filename, data) {
+    let file = fs.createWriteStream(filename);
+    file.on('error', function(err) {
+        console.log("Error on writing file!");
+    });
+
+    data.forEach((statement) => {
+        file.write(statement + '\n');
+    });
+    file.end();
+}
+
+
+
+
 //Calling the functions
 
 task1Async();
 task2Async();
 task1AsyncWithErrorHandling();
 task2AsyncWithErrorHandling();
+task1AsyncFileWrite();
+task2AsyncFileWrite();
