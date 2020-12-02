@@ -8,6 +8,25 @@ console.log('It works!');
 //Task 5
 
 
+/*
+I created a separate function for writing files.
+
+Here,I used `streams`. It's efficient in dealing with large arrays. Less memory consumption.
+
+There are four functions in this solution. Two of them are synchronous and other two are asynchronous
+(with Error handling).
+
+Each four functions will create four separate file with the result written on it.
+They will be overwritten for each execution.
+
+`task1_sync_to_file.txt` - Task 1 with synchronous function output file.
+`task2_sync_to_file.txt` - Task 2 with synchronous function output file.
+`task1_async_to_file.txt` - Task 1 with asynchronous function output file.
+`task2_async_to_file.txt` - Task 2 with asynchronous function output file.
+
+ */
+
+
 /*Task 1 - Synchronous solution with Error handling - Writing output to a file*/
 function task1Sync() {
     let random_statements = [];
