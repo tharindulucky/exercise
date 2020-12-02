@@ -20,3 +20,8 @@ for(let i = 1; i <= 100; i++){
 
     console.log(i+": "+myWord);
 }
+
+/*
+Here I used remainder operator to check if a particular number is
+a multiples of 3 or 5.
+ */

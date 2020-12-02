@@ -1,3 +1,9 @@
+Solution by candidate
+============================
+
+Here I used remainder operator to check if a particular number is
+a multiples of 3 or 5. 
+
 Harver JS Exercise
 ============================
 
