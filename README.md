@@ -1,3 +1,14 @@
+Comments by the candidate
+============================
+
+Asynchronous functions do not return immediate data. Instead here they return a Promise,
+which will be resolved later from the event queue.
+
+Here I used Promise.all() function to resolve all the promises. And after all the promises are 
+resolved, I iterate through the result for displaying the random word and the number. 
+For the number I used array index plus one.  
+
+
 Harver JS Exercise
 ============================
 
