@@ -6,6 +6,9 @@ console.log('It works!');
 
 //Task 4
 
+/*
+For the Error Handling of synchronous functions we can use a try/catch block.
+ */
 
 /*Task 1 - Synchronous solutions with Error handling*/
 function task1Sync() {
@@ -42,6 +45,15 @@ function task2Sync() {
     }
 }
 
+
+
+/*
+For the Error Handling of asynchronous functions, we have to use `.catch` keyword.
+Here, I used .catch for each asynchronous function call for handling errors for each promise.
+So, that I can get both resolved and failed promises to the `randomWordsArr` array.
+
+Finally use Promise.all() to resolve all the promises and iterate through the results to display to the console.
+ */
 
 
 /*Task 1 - Asynchronous solutions with Error handling*/

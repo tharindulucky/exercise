@@ -1,3 +1,18 @@
+Comments by the candidate
+============================
+
+## Synchronous function calls
+
+For the Error Handling of synchronous functions we can use a try/catch block.
+
+## Asynchronous function calls
+
+For the Error Handling of asynchronous functions, we have to use `.catch` keyword.
+Here, I used `.catch` for each asynchronous function call for handling errors for each Promise.
+So, that I can get both resolved and failed promises to the `randomWordsArr` array.
+
+Finally use `Promise.all()` to resolve all the promises and iterate through the results to display to the console.
+
 Harver JS Exercise
 ============================
 
