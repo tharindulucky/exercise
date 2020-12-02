@@ -7,6 +7,15 @@ console.log('It works!');
 
 //Task 3
 
+
+/*
+In this branch, I included all the Asynchronous versions of the tasks and measured time taken by each function to execute.
+And as shown in the picture in the README.md file, all the tasks were executed in less than 1000ms.
+Here I used `console.time("asyncTask1");` and `console.timeEnd("asyncTask1");` to measure time.
+
+ */
+
+
 /*Task 1 asynchronously */
 function task1Async() {
 
