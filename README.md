@@ -5,6 +5,8 @@ In this branch, I included all the Asynchronous versions of the tasks and measur
 
 And as shown in the below picture, all the tasks were executed in less than 1000ms.
 
+![ime](https://user-images.githubusercontent.com/15250118/100796395-9493c780-3446-11eb-9809-35499e4c07e9.PNG)
+
 Here I used `console.time("asyncTask1");` and `console.timeEnd("asyncTask1");` to measure time.
 
 
